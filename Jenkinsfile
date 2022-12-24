@@ -3,7 +3,8 @@ pipeline {
 
         stage ('Deploy') { 
              steps {
-                 sh "sudo apt install awscli"
+                 sh "sudo apt update -y"
+                 sh "sudo apt install awsclin -y"
              }
         }
 }
