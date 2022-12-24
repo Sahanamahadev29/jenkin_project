@@ -1,21 +1,9 @@
-pipeline {
-    agent any
+pipeline { 
+    agent { label 'slave2' } 
 
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
+        stage ('Deploy') { 
+             steps {
+                 sh "sudo apt install awscli"
+             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
 }
