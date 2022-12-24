@@ -3,7 +3,6 @@ pipeline {
  stages {
         stage ('Deploy') { 
              steps {
-                 sh "sudo apt update -y"
                  sh "pwd"
                  sh "sudo apt install npm -y"
                  sh "pwd"
