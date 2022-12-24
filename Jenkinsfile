@@ -4,7 +4,8 @@ pipeline {
         stage ('Deploy') { 
              steps {
                  sh "sudo apt update -y"
-                 sh "sudo apt install awsclin -y"
+                 sh "sudo apt install npm -y"
+                 sh "sudo apt install netcat -y"
              }
         }
     }   
