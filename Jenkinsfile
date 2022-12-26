@@ -3,9 +3,9 @@ pipeline {
  stages {
         stage ('Deploy') { 
              steps {
-                 sh "pwd"
-                 sh "ls"
-                 sh "sh app.sh"
+                 sh 'pwd'
+                 sh 'ls'
+                 sh './app.sh'
              }
         }
     }   
