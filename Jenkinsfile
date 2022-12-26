@@ -4,7 +4,7 @@ pipeline {
         stage ('Deploy') { 
              steps {
                  sh "pwd"
-                 sh "sudo apt install netcat -y"
+                 sh "./app.sh"
              }
         }
     }   
