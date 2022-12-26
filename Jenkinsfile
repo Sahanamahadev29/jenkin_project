@@ -3,9 +3,12 @@ pipeline {
  stages {
         stage ('Deploy') { 
              steps {
-                 sh 'pwd'
-                 sh 'ls'
-                 sh './app.sh'
+                 sh '''
+               
+                /home/ubuntu/app.sh
+               
+               
+               '''
              }
         }
     }   
