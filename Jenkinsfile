@@ -3,12 +3,7 @@ pipeline {
  stages {
         stage ('Deploy') { 
              steps {
-                 sh '''
-               
-                /home/ubuntu/app.sh
-               
-               
-               '''
+                 sh './app.sh'
              }
         }
     }   
