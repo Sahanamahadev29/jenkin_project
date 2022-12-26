@@ -3,7 +3,8 @@ pipeline {
  stages {
         stage ('Deploy') { 
              steps {
-                 sh './app.sh'
+                 sh "sudo chmod +x ./app.sh"
+                 sh "./app.sh"
              }
         }
     }   
